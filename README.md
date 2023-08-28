@@ -1,2 +1,2 @@
-ACL -
-Lista de permissão de acessos com 2 tipos de usuários: admin e não admin
+Autenticação e nivel de permisssão de usuário. <br>
+Dois tipos de usuários: admin e não admin.
