@@ -16,9 +16,6 @@ class HomeController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        if(Gate::allows('manage_task')){
-            return view('passou');
-        }
     }
 
     /**
@@ -28,6 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        if(Gate::allows('manage_task')){
+            return view('passou');
+        }
         return view('home');
     }
 }
